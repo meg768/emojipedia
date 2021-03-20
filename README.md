@@ -1,2 +1,3 @@
 # emojipedia
-Emojipedia Icons
+
+Emojipedia Icons for Node. Under construction.
