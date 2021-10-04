@@ -1,8 +1,8 @@
-var loadEmojis = once((folder) => {
+var loadEmojis = (folder) => {
     var fs = require('fs');
     var path = require('path');
 
-    var images = [];
+    var images = {};
 
     fs.readdirSync(folder).forEach((file) => {
 
@@ -28,4 +28,8 @@ var loadEmojis = once((folder) => {
 
     return images;
 
-});
+};
+
+module.exports.apple = function() {
+	return loadEmojis('./apple');
+}
